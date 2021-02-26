@@ -1,9 +1,0 @@
-PUT http://localhost:3003/api/blogs/6036a90db8f8731de947c11c
-Content-Type: application/json
-
-{
-"title": "fashion",
-"author": "influenser pro",
-"url": "www.fashion.com",
-"likes": 79
-}
