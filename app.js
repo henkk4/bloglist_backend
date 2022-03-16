@@ -12,7 +12,10 @@ const middleware = require('./utils/middleware')
 
 mongoose.connect(config.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true })
 
-app.use(cors())
+app.use(cors({ 
+  origin: "https://blog-saver-app.herokuapp.com/", 
+  credentials: true 
+ }));
 app.use(express.json())
 
 app.use(middleware.tokenExtractor)
